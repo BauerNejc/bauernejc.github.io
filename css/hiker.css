@@ -1,0 +1,920 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 320px) {
+
+    /*NAVBAR*/
+
+    .navbar-default {
+        background: transparent;
+        border: 0;
+        text-shadow: 1px 1px 0.5px black;
+    }
+    .navbar-default .navbar-nav>.active>a {
+        color: #e7e7e7;
+        background-color: transparent;
+    }
+
+    .navbar-nav {
+        margin: 0;
+        text-align: center;
+        font-size: 19px;
+        padding-top: 10px;
+    }
+
+    .navbar-header {
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+        font-family: "kalam";
+    }
+
+    .navbar-default .navbar-brand {
+        color: #efefef;
+    }
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 0;
+    }
+
+    .navbar-default .navbar-brand:hover {
+        color: #efefef;
+    }
+
+    .navbar-brand {
+        float: none;
+        font-size: 3em;
+        letter-spacing: 5px;
+        margin: 0;
+    }
+
+    .container-fluid > .navbar-header {
+        margin: 0;
+    }
+
+    /*border-bottom animation*/
+    
+    .navbar-default .navbar-nav>li>a {
+        color: #efefef;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .navbar-default .navbar-nav>li>a:before {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: #efefef;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .navbar-default .navbar-nav>li>a:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+        color: #efefef;
+    }
+
+    .navbar-default .navbar-nav>li>a:focus {
+        color: #efefef;
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+        color: #efefef;
+    }
+
+
+    .elementi {
+        width: 100%;
+        text-align: center;
+        font-size: 1.6em;
+        font-family: "open sans condensed";
+        letter-spacing: 2px;
+    }
+
+    .elementi > li {
+        float: none;
+        display: inline-block;
+        padding: 15px 0px;
+    }
+
+
+    /*JUMBOTRON*/
+
+
+    .naslovna {
+        width: 100%;
+        height: auto;
+        margin-top: -99%;
+        background: url(../images/hiker-opt.jpg) no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: -340px;
+        text-shadow: 1px 1px 0.5px black;
+        padding: 79% 0;
+    }
+
+    .naslov {
+        padding-top: 13%;
+        color: #efefef;
+    }
+
+    .naslov_levi {
+        text-align: center;
+        font-family: "open sans condensed";
+        letter-spacing: 6px;
+        padding-top: 66px;
+    }
+
+    .naslov_levi h1 {
+        font-size: 33px;
+        margin-top: 47px;
+    }
+
+    .naslov_levi p {
+        font-size: 18px;
+    }
+
+    /*razmik med f in i*/
+
+
+    .presledek {
+        padding-left: 1px;
+    }
+
+    .naslov_desni p {
+        display: none;
+    }
+
+    .naslovnacrta {
+        border-color: #efefef;
+        margin-right: 23%;
+        margin-left: 23%;
+        color: #efefef;
+        border: 0;
+        height: 1px;
+        background-image: -webkit-linear-gradient(left, rgba(239, 239, 239, 0), rgba(239, 239, 239, 0.75), rgba(239, 239, 239, 0));
+       
+    }
+
+    /*ABOUT US*/
+
+
+
+    #about_us {
+        height: auto;
+        width: 100%;
+        padding: 30px;
+        
+    }
+
+    #about_us h1 {
+        color: #7CB342;
+        font-family: "Open Sans Condensed";
+        font-weight: 700;
+        font-size: 33px;
+        text-align: center;
+        letter-spacing: 5px;
+        margin-top: 15px;
+        text-shadow: 1px 1px 0.5px black;
+        
+    }
+
+    .whyus {
+        text-align: center;
+        font-family: "open sans condensed";
+        font-weight: 400;
+        min-height: 300px;
+    }
+    /*<hr>*/
+
+
+    .whycrta {
+        border-color: #7CB342;
+        text-align: center;
+        width: 230px;
+        margin-bottom: 35px;
+        border: 0;
+        height: 1px;
+        background-image: -webkit-linear-gradient(left, rgba(124, 179, 66, 0), rgba(124, 179, 66, 0.75), rgba(124, 179, 66, 0));
+    }
+
+
+    #guide {
+        background: url(../images/hiker4-opt.jpg) no-repeat center center;
+        background-size: 100%;
+    }
+
+    #guide:hover {
+        opacity: .9;
+        transition: opacity 0.3s ease;
+    }
+
+    #climbing {
+        background: url(../images/climbing-opt.jpg) no-repeat center center;
+        background-size: 100%;
+    }
+
+    #climbing:hover {
+        opacity: .9;
+        transition: opacity 0.3s ease;
+    }
+
+    #safety {
+        background: url(../images/safety-opt.jpg) no-repeat center center;
+        background-size: 100%;
+    }
+
+    #safety:hover {
+        opacity: .9;
+        transition: opacity 0.3s ease;
+    }
+
+
+    .reasons {
+        border: 1px solid #999;
+        border-radius: 15px;
+        box-shadow: 2px 2px 40px black;
+        height: 154px;
+        padding:0;
+        float: none;
+        margin: 22px 0;
+    }
+
+    /*row for reasons no margin*/
+
+    .nomargin {
+        margin: 0;
+    }
+
+
+
+    .overlay {
+        opacity: 0;
+        position: absolute;
+        transform: translate(0%, 0%);
+        height: 100%;
+    }
+
+    .overlay h4 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #efefef;
+        text-shadow: 1px 1px 1px black;
+        opacity: 1;
+        padding-bottom: 12px;
+
+    }
+
+
+    .overlay p {
+        font-weight: 400;
+        text-shadow: 1px 1px 1px black;
+        color: #efefef;
+        font-size: 1.3em;
+        opacity: 1;
+    }
+
+    .overlay:hover {
+        opacity: 1;
+        transition: opacity .5s ease;
+    }
+
+    /*TRIPS*/
+
+
+
+    #trips {
+        width: 100%;
+        height: auto;
+        background: rgba(124,179,66,1);
+        background: -moz-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(124,179,66,1)), color-stop(100%, rgba(145,232,66,1)));
+        background: -webkit-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        background: -o-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        background: -ms-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        background: linear-gradient(to bottom, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7cb342', endColorstr='#91e842', GradientType=0 );
+    }
+
+    #trips h1 {
+        text-align: center;
+        margin: 30px auto;
+        color: #efefef;
+        font-family: "open sans condensed";
+        font-weight: 700;
+        font-size: 33px;
+        letter-spacing: 4px;
+        text-shadow: 1px 1px 0.5px black;
+    }
+
+    .tripscrta {
+        border: 0;
+        height: 1px;
+        background-image: -webkit-linear-gradient(left, rgba(239, 239, 239, 0), rgba(239, 239, 239, 0.75), rgba(239, 239, 239, 0));
+        margin-bottom: 58px;
+    }
+
+    .carousel {
+        width: 100%;
+        height: auto;
+        margin: auto 0;
+        overflow: hidden;
+        border-radius: 20px;
+        opacity: 0.9;
+        box-shadow: 3px 2px 5px black;
+    }
+
+    .carousel-control.right {
+        border-radius: 20px;
+        right: 13px;
+    }
+    .carousel-control.left {
+        left: 15px;
+        border-radius: 20px;
+    }
+
+    .carousel-inner {
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+
+    .carousel-inner p {
+        display: none;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+
+    .carousel-inner h3 {
+        font-size: 30px;
+    }
+
+    .carousel-inner .item {
+        width: 100%;
+        height: 250px;
+    }
+
+    .item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 250px;
+    }
+
+    .carouselhr {
+        margin: 10px;
+        border: 0;
+        height: 2px;
+        background-image: -webkit-linear-gradient(left, rgba(239, 239, 239, 0), rgba(239, 239, 239, 0.75), rgba(239, 239, 239, 0));
+    }
+
+    /*opis carousel*/
+
+
+    .carousel-caption {
+        display: none;
+    }
+
+    .opis {
+        color: #efefef;
+        font-family: "open sans condensed";
+        display: block;
+    }
+
+
+    .opis h3 {
+        letter-spacing: 4px;
+        font-weight: 700;
+        text-align: center;
+        font-size: 23px;
+        padding-bottom: 10px;
+        text-shadow: 1px 1px 0.5px black;
+        margin-top: 30px;
+    }
+
+    .opis p {
+        line-height: 1.2em;
+        letter-spacing: 1px;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    /*FORM*/
+
+
+    #contact h1 {
+        font-size: 21px;
+    }
+
+    #contact p {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 13px;
+    }
+
+    #contact .btn-default {
+        background: rgba(124,179,66,1);
+        background: -moz-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(124,179,66,1)), color-stop(100%, rgba(145,232,66,1)));
+        background: -webkit-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        background: -o-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        background: -ms-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        background: linear-gradient(to bottom, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7cb342', endColorstr='#91e842', GradientType=0 );
+        color: #efefef;
+        font-family: "open sans condensed";
+        font-size: 16px;
+        letter-spacing: 5px;
+        font-weight: 700;
+        border: 1px solid #999;
+        border-radius: 12px;
+        text-transform: uppercase;
+        padding-left: 17px;
+        text-shadow: 1px 1px 0.5px black;
+        box-shadow: 0px 0px 0.5px black;
+    }
+
+    #contact .btn-default:hover {
+        opacity: 0.9;
+    }
+
+    .contactform {
+        padding-top: 25px;
+    }
+
+    .formtext {
+        text-align: center;
+        font-family: "roboto";
+        padding-top: 15px;
+    }
+
+    .formtext p {
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
+
+    .formtext h4 {
+        padding-top: 10px;
+    }
+
+    .name {
+        color: rgba(124,179,66,1);
+        color: -moz-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        color: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(124,179,66,1)), color-stop(100%, rgba(145,232,66,1)));
+        color: -webkit-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        color: -o-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        color: -ms-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        color: linear-gradient(to bottom, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7cb342', endColorstr='#91e842', GradientType=0 ); 
+        letter-spacing: 2px;
+        font-size: 15px;
+    }
+
+    .email {
+        color: rgba(124,179,66,1);
+        color: -moz-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        color: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(124,179,66,1)), color-stop(100%, rgba(145,232,66,1)));
+        color: -webkit-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        color: -o-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        color: -ms-linear-gradient(top, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        color: linear-gradient(to bottom, rgba(124,179,66,1) 0%, rgba(145,232,66,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7cb342', endColorstr='#91e842', GradientType=0 ); 
+        letter-spacing: 2px;
+        font-size: 15px;
+    }
+
+    /*Back To Top*/
+
+
+    #backtotop {
+        right: 20px;
+        top: 90%;
+        font-size: 25px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .fa-arrow-up:before {
+        font-size: 23px;
+    }
+
+    #arrowtop {
+        padding-top:4%;
+        float: right;
+        color: black;
+    }
+
+}
+
+/*========================================
+    RESPONSIVE STYLING
+  ========================================*/  
+
+@media only screen and (min-width: 480px) {
+    .naslovna {
+        background: url(../images/hiker-opt.jpg) no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: 0px;
+    }
+
+    .navbar-brand {
+        font-size: 4em;
+    }
+
+    .navbar-nav {
+        font-size: 20px;
+    }
+    .navbar-default .navbar-nav>.active>a {
+        color: #e7e7e7;
+        background-color: transparent;
+    }
+    .navbar-default .navbar-nav>.active>a:hover {
+        color: #e7e7e7;
+        background-color: transparent;
+    }
+
+    .nav>li>a {
+        padding: 10px 30px;
+    }
+
+    .overlay h4 {
+        font-size: 23px;
+    }
+
+    .overlay p {
+        font-size: 1.4em;
+    }
+
+    .naslov_levi h1 {
+        font-size: 40px;
+    }
+
+    .naslov_levi p {
+        font-size: 20px;
+    }
+
+    #about_us {
+        padding: 65px;
+    }
+
+    #about_us h1 {
+        font-size: 40px;
+    }
+
+    #trips h1 {
+        font-size: 40px;
+    }
+
+    .opis h3 {
+        font-size: 30px;
+    }
+
+    .opis p {
+        font-size: 20px;
+    }
+
+    .carousel-inner .item {
+        height: 400px;
+    }
+
+    .item img {
+        min-height: 400px;
+    }
+
+    #contact .btn-default {
+        font-size: 19px;
+    }
+
+
+} 
+
+@media only screen and (min-width: 768px) {
+
+
+    .naslovna {
+        background: url(../images/hiker-opt.jpg) no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: -284px;
+        padding: 22% 0;
+    }
+    .navbar-nav {
+        float: none;
+        font-size: 23px;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        padding-top: 20px;
+    }
+    .navbar-default .navbar-nav>.active>a {
+        color: #e7e7e7;
+        background-color: transparent;
+    }
+    .navbar-default .navbar-nav>.active>a:hover {
+        color: #e7e7e7;
+        background-color: transparent;
+    }
+
+    .naslov_levi {
+        margin-top: 22%;
+    }
+
+    .naslov_levi h1 {
+        font-size: 58px;
+    }
+
+    .naslov_levi p {
+        font-size: 27px;
+    }
+
+     .naslov_desni p {
+        display: block;
+        width: 100%;
+        padding-top: 40%;
+        text-align: center;
+        font-family: "open sans condensed";
+        font-weight: 300;
+        font-size: 25px;
+        letter-spacing: 1.7px;
+    }
+
+    .whyus {
+        width: auto;
+    }
+
+    .reasons {
+        margin: 45px 0;
+    }
+
+    .overlay h4 {
+        font-size: 26px;
+    }
+
+    .overlay p {
+        font-size: 1.7em;
+    }
+
+    .carouselwidth {
+        width: 95%;
+    }
+    .carousel-inner .item {
+        height: 500px;
+    }
+
+    .item img {
+        min-height: 500px;
+    }
+
+    .opis h3 {
+        font-size: 35px;
+    }
+
+    .opis p {
+        font-size: 25px;
+    }
+
+    #contact h1 {
+        font-size: 33px;
+    }
+
+    #contact p {
+        font-size: 17px;
+    }
+    #contact .btn-default {
+        font-size: 25px;
+    }
+
+    .name, .email {
+        font-size: 18px;
+    }
+
+    .fa-arrow-up:before {
+        font-size: 30px;
+    }
+    #arrowtop {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .naslovna {
+        background: url(../images/hiker-opt.jpg) no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: -154px;
+        padding: 9% 0;
+    }
+    .container-fluid > .navbar-header {
+        padding-top: 80px;
+    }
+    .navbar-brand {
+        font-size: 4em;
+    }
+    .navbar-nav {
+        font-size: 26px;
+        margin-top: 113px;
+    }
+    .navbar-default .navbar-nav>.active>a {
+        color: #e7e7e7;
+        background-color: transparent;
+    }
+    .navbar-default .navbar-nav>.active>a:hover {
+        color: #e7e7e7;
+        background-color: transparent;
+    }
+    .navbar-default .navbar-nav>li>a {
+        margin: 20px 70px;
+    }
+    .naslov_levi {
+        margin-top: 17%;
+        padding-left: 20px;
+    }
+    .naslov_levi h1 {
+        font-size: 40px;
+    }
+    .naslovnacrta {
+        height: 2px;
+    }
+    .naslov_levi p {
+        font-size: 27px;
+    }
+    .naslov_desni {
+        margin-top: 68%;
+    }
+    .naslov_desni p {
+        font-size: 21px;
+        padding: 0;
+    }
+
+    .reasons {
+        float: left;
+        margin-right: 1%;
+        width: 32.333333%;
+    }
+
+    .overlay h4 {
+        font-size: 23px;
+    }
+    .overlay p {
+        font-size: 1.5em;
+    }
+
+    #trips {
+        padding-bottom: 10%;
+    }
+
+    .opis h3 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+    .opis p {
+        font-size: 22px;
+    }
+    .carousel-inner .item {
+        height: 400px;
+    }
+
+    .item img {
+        min-height: 400px;
+    }
+    .carouselhr {
+        margin: 21px;
+    }
+    .formtext {
+        padding: 20px 150px;
+    }
+    .contactform {
+        padding: 25px 100px;
+    }
+    #contact .btn-default {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .naslovna {
+        background-position-x: 0px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        margin: 20px 70px;
+    }
+    .naslov_desni {
+        margin-top: 53%;
+    }
+    .naslov_levi {
+        padding-top: 12px;
+    }
+    .naslov_levi h1 {
+        font-size: 50px;
+    }
+
+    #about_us {
+        padding: 50px;
+        padding-bottom: 268px;
+    }
+
+    #about_us h1 {
+        font-size: 50px;
+    }
+
+    .overlay h4 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .overlay p {
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+    .reasons {
+        height: 330px;
+    }
+    #climbing {
+        background-size: 145%;
+    }
+    #safety {
+        background-size: 145%;
+    }
+    #guide {
+        background-size: 145%;
+    }
+
+    #trips h1 {
+        font-size: 50px;
+    }
+    .opis {
+        padding: 0px 50px;
+    }
+    .opis h3 {
+        font-size: 35px;
+    }
+    .opis p {
+        margin: 73px 0px;
+    }
+    .carouselhr {
+        margin: 40px;
+    }
+    .carousel-inner .item {
+        height: 580px;
+    }
+    .item img {
+        min-height: 580px;
+    }
+
+    #contact h1 {
+        font-size: 40px;
+    }
+    #contact p {
+        font-size: 19px;
+    }
+    .contactform {
+        padding: 25px 400px;
+    }
+    .formtext {
+        padding: 20px 245px;
+    }
+    #contact .btn-default {
+        font-size: 22px;
+        margin-top: 25px;
+    }
+}
+
+/*universal styling*/
+
+
+.show {
+    display: block;
+    opacity: 1;
+}
+
+.hide {
+    display: none!important;
+    opacity: 0;
+}
+
+.color1 {
+    color: black;
+}
+
+.color2 {
+    color: #efefef;
+}
+
+
+
+
+
+
+
+
+
+
+
