@@ -3,6 +3,15 @@
 
 var _window = $(window);
 
+/*Page fade in*/
+$(document).ready(function(){
+    $("body").hide().fadeIn(700);
+    $(".naslov_levi").hide().delay(200).fadeIn(2000);
+    $(".navbar-default").hide().fadeIn(1000);
+    $(".naslov_desni").hide().delay(200).fadeIn(3000);
+});
+
+
 
 /*Smooth Scroll*/
 
@@ -69,20 +78,6 @@ $(".carousel-control.left").on("click", function(){
 });
 
 
-
-
-
-
-
-
-
-/*Page fade in*/
-$(document).ready(function(){
-    $("body").fadeIn(700);
-    $(".naslov_levi").hide().delay(300).fadeIn(1700);
-    $(".navbar-default").hide().delay(200).fadeIn(1000);
-    $(".naslov_desni").hide().delay(400).fadeIn(2000);
-});
 
 
 
