@@ -6,9 +6,9 @@ var _window = $(window);
 /*Page fade in*/
 $(document).ready(function(){
     $("body").hide().fadeIn(700);
-    $(".naslov_levi").hide().delay(200).fadeIn(2000);
+    $(".naslov_levi").hide().fadeIn(2000);
     $(".navbar-default").hide().fadeIn(1000);
-    $(".naslov_desni").hide().delay(200).fadeIn(3000);
+    $(".naslov_desni").hide().fadeIn(3000);
 });
 
 
