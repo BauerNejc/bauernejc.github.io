@@ -9,7 +9,7 @@ $(document).ready(function(){
     $(".naslov_levi").hide().fadeIn(2000);
     $(".navbar-default").hide().fadeIn(1000);
     $(".naslov_desni").hide().fadeIn(3000);
-});
+
 
 
 
@@ -75,6 +75,7 @@ $(".carousel-control.left").on("click", function(){
         $("#text").delay(130).animate({opacity: 1}, function(){
         })  
     })
+});
 });
 
 
